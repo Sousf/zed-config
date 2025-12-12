@@ -1,0 +1,57 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-shift-w": "pane::CloseOtherItems",
+      "ctrl-b": "editor::GoToDefinition",
+      "ctrl-shift-f": "project_search::ToggleFocus",
+      "ctrl-f": "pane::DeploySearch",
+      "ctrl-1": "workspace::ToggleLeftDock",
+      "ctrl-2": "workspace::ToggleRightDock",
+      "ctrl-d": "project_panel::NewDirectory",
+      "ctrl-n": "project_panel::NewFile",
+      "ctrl-shift-p": "command_palette::Toggle",
+      "ctrl-r": "editor::Rename"
+    }
+  },
+  {
+    "context": "Editor && vim_mode != insert && !VimWaiting",
+    "bindings": {
+      "f12": "editor::GoToDefinition",
+      "ctrl-f12": "editor::GoToImplementation",
+      "ctrl-alt-f7": "editor::FindAllReferences",
+      "ctrl-b": "editor::GoToDefinition",
+      "alt-enter": "editor::ToggleCodeActions",
+      "space f": "file_finder::Toggle",
+      "space b": "workspace::ToggleLeftDock",
+      "space t": "terminal_panel::ToggleFocus",
+      "space 1": ["pane::ActivateItem", 0],
+      "space 2": ["pane::ActivateItem", 1],
+      "space 3": ["pane::ActivateItem", 2],
+      "space 4": ["pane::ActivateItem", 3],
+      "space 5": ["pane::ActivateItem", 4],
+      "space 6": ["pane::ActivateItem", 5],
+      "space 7": ["pane::ActivateItem", 6],
+      "space 8": ["pane::ActivateItem", 7],
+      "space 9": ["pane::ActivateItem", 8]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent"
+    }
+  }
+]
